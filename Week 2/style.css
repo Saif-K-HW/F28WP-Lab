@@ -12,7 +12,7 @@ body {
 /* Header Styles */
 header {
     background: linear-gradient(301deg, #7676c7, #000);
-    color: #fff;
+    color: #ADD8E6;
     text-align: center;
     padding: 20px;
 }
@@ -35,7 +35,7 @@ header {
 
 /* Navigation Styles */
 nav ul {
-    background-color: #333;
+    background-color: #ADD8E6;
     color: #fff;
     text-align: center;
     list-style-type: none;
