@@ -36,7 +36,7 @@ header {
 /* Navigation Styles */
 nav ul {
     background-color: #ADD8E6;
-    color: #ADD8E6;
+    color: #2a2b87;
     text-align: center;
     list-style-type: none;
     margin: 0;
@@ -57,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #00008B;  /* Darker shade for hover */
+    background-color: #3a00c2;  /* Darker shade for hover */
 }
 
 /* Banner Styles */
