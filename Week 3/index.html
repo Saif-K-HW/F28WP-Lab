@@ -28,11 +28,15 @@
     </ul>
     </nav>
 
-    <!-- Banner Section -->
+    <!-- Replace the Banner Section with the slider -->
     <section class="banner-container">
-      <img src="images/travel banner.svg" alt="Illustrative banner of travel destinations" class="centered-banner" loading="lazy">
-
+      <img name="slide" alt="Alt goes here" title="Title goes here"
+       width="70%"/>
     </section>
+
+
+
+    
 
     <!-- Main Content Section -->
     <main class="services">
@@ -105,5 +109,47 @@
       <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
     </footer>
   </div>
+
+
+  <Script>
+    var i = 0;                  // Start Point
+var images = [];        // Images Array
+var time = 2000;        // Time Interval Between Switch
+         
+// Image List
+images[0] = "images/Slide 1.png";
+images[1] = "images/Slide 2.png";
+images[2] = "images/Slide 3.png";
+images[3] = "images/Slide 4.png";
+images[4] = "images/Slide 5.png";
+images[5] = "images/Slide 6.png";
+images[6] = "images/Slide 7.png";
+images[7] = "images/Slide 8.png";
+
+// Change Image
+function changeImg(){
+        document.slide.src = images[i];
+
+
+        // Check If Index Is Under Max
+        if(i < images.length - 1){
+          // Add 1 to Index
+          i++; 
+        } else { 
+                // Reset Back To O
+                i = 0;
+        }
+
+
+        // Run function every x seconds
+        setTimeout("changeImg()", time);
+}
+
+
+// Run function when page loads
+window.onload=changeImg;
+  </Script>
+
+
 </body>
 </html>
